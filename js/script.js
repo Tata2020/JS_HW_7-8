@@ -2,7 +2,7 @@ $(function() {
   var $items = $('.tabs__items');
   var $buttonHelp = $(':button');
   var $inputItem = $(':text');
-  var flag = 0;
+  //var flag = 0;
   var toolTip = ["", "", ""];
   for (var i = 0; i < $inputItem.length; i++) {
   	toolTip[i] = $inputItem[i].title;
@@ -25,7 +25,7 @@ $(function() {
  
   //button "Show help" - all tooltips
   $buttonHelp.on('click', function() {
-    $('.tooltips').css('visibility', 'visible');
+    $('.tooltips').css('visibility', 'visible').slideUp().slideDown();
   });
 
   //hover input
@@ -37,4 +37,15 @@ $(function() {
     	$(this).next().css('visibility', 'hidden');
     }
     );
+
+  //key Tab
+  $inputItem.keyup(function (e) {
+   if (e.which == 9) {
+   	 $('.tooltips').css('visibility', 'hidden');
+   	 $(this).next().css('visibility', 'visible');
+   };
+  });
+
+  
+
 });
