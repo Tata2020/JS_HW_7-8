@@ -1,0 +1,118 @@
+html, body {
+	width: 100%;
+	background: #f3f3f3;
+	font-family: verdana, arial, 'sans serif';
+}
+.wrapper {
+	width: 960px;
+	margin: 0px auto;
+}
+
+.tabs {
+	width: 600px;
+	margin: 50px auto;
+	padding: 10px;
+	border: 1px solid #A76E05;
+	border-radius: 5px;
+}
+.tabs__menu {
+	padding: 5px 5px 0px 5px;
+	background: #F1ECE5;
+	border-radius: 5px 5px 0px 0px;
+}
+.tabs__items {	
+	display: inline-block;
+	width: 32%;
+	padding: 5px 0px;
+	margin: 0px 1px 0px 2px;
+	background: #EADAC2;
+	text-align: center;
+	border-radius: 5px 5px 0px 0px;
+}
+.tabs__items a {
+	padding: 5px 25px;
+	color: #7B4C06;
+	font-size: 18px;
+	border-radius: 5px 5px 0px 0px;
+}
+.tabs__items a:hover {
+	background: #CAA56F;
+}
+.tabs__items a:active {
+	color: #fff;
+	background: #6B4C1D;
+}
+.tabs__text {
+	margin-top: 5px;
+	height: 190px;
+	overflow: auto;
+	background: #F1ECE5;
+	padding: 15px;
+	border-radius: 0px 0px 7px 7px;
+}
+.tabs__content {
+	display: none;
+}
+.tabs__content--active {
+	display: block;
+	padding: 5px;
+	text-align: justify;
+	font-size: 16px;
+	color: #454545;
+}
+.box__form {
+	margin: 10px auto;
+	width: 560px;
+	padding: 20px;
+	border: 1px solid #A76E05;
+	border-radius: 5px;
+}
+.box__content {
+	margin: 10px auto;
+}
+label {
+    display: inline-block; 
+    margin-top: 22px;
+    width: 100px;
+    vertical-align: baseline;
+}
+  
+fieldset div {
+    margin-bottom: 15px;
+}
+  
+ input[type="text"] {
+  	width: 200px;
+  	vertical-align: baseline;
+  	color: #454545;
+  	font-size: 15px;
+  	font-family: verdana;
+}
+
+input[type="button"]  {
+	display: inline-block;
+	margin: 10px 20px;
+	padding: 10px 20px;
+	background: #F1ECE5;
+	color: #454545;
+  	font-size: 15px;
+  	font-family: verdana;
+  	border: 1px solid #A76E05;
+	border-radius: 5px;
+}
+input[type="button"]:hover {
+	border: 2px solid #BBA376;
+}
+.tooltips {
+	display: inline-block;
+	width: 220px;
+	margin-left:  20px;
+	padding: 3px 20px;
+	vertical-align: baseline;
+	background: #F9F5E8;
+	border: 1px solid #BBA376;
+	border-radius: 3px;
+	font-size: 13px;
+	color: #A27F4A;
+	visibility: hidden;
+}
